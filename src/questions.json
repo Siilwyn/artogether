@@ -1,0 +1,42 @@
+[
+  {
+    "question": "wat?",
+    "description": "ye",
+    "reward": "city-building",
+    "answers": [
+      {
+        "content": "1",
+        "correct": true
+      },
+      {
+        "content": "2"
+      },
+      {
+        "content": "3"
+      },
+      {
+        "content": "4"
+      }
+    ]
+  },
+  {
+    "question": "",
+    "description": "",
+    "reward": "city-building",
+    "answers": [
+      {
+        "content": "",
+        "correct": true
+      },
+      {
+        "content": ""
+      },
+      {
+        "content": ""
+      },
+      {
+        "content": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="vendor/hammer.js"></script>
+    <script src="vendor/hammer-time.js"></script>
+    <script src="router.js" defer></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <a href="#inventory" class="action-button show-inventory-button" data-painting-inventory-show>+</a>
+    <a href="#question" class="action-button show-question-button">?</a>
+    <button class="action-button show-background-button" data-toggle-background>&#9639;</button>
+    <section class="painting-inventory-container" data-painting-inventory-container>
+        <h2>Choose an item</h2>
+        <div class="painting-inventory" data-painting-inventory>
+        </div>
+    </section>
+    <section class="painting-canvas" data-painting-canvas>
+    </section>
+    <link rel="stylesheet" href="partials/painting-canvas/painting-canvas.css">
+    <script src="partials/painting-inventory/painting-inventory.js"></script>
+    <link rel="stylesheet" href="partials/painting-inventory/painting-inventory.css">
+
+    <section class="question-panel" data-question-panel>
+        <h2 class="question-panel-title" data-question-title></h2>
+        <h3 data-question-description></h3>
+        <ul data-question-answers>
+            <li><input type="button"></li>
+            <li><input type="button"></li>
+            <li><input type="button"></li>
+            <li><input type="button"></li>
+        </ul>
+    </section>
+    <script src="partials/question-panel/question-panel.js"></script>
+    <link rel="stylesheet" href="partials/question-panel/question-panel.css">
+
+    <section class="background-panel" data-background-panel>
+        <ul class="background-options" data-background-options>
+            <li><img src="paintings/backgrounds/1.jpg" alt="" class="selected" data-background-default></li>
+            <li><img src="paintings/backgrounds/2.jpg" alt=""></li>
+            <li><img src="paintings/backgrounds/3.jpg" alt=""></li>
+            <li><img src="paintings/backgrounds/4.jpg" alt=""></li>
+            <li><img src="paintings/backgrounds/5.jpg" alt=""></li>
+        </ul>
+    </section>
+    <script src="partials/background-panel/background-panel.js"></script>
+    <link rel="stylesheet" href="partials/background-panel/background-panel.css">
+
+    <div class="update-dom-hack" update-dom-hack></div>
+    <script src="partials/update-dom-hack/update-dom-hack.js"></script>
+</body>
+
+</html>

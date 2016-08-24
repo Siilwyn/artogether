@@ -1,0 +1,26 @@
+.background-panel {
+    transition: all 0.75s ease-out;
+    z-index: 2;
+    display: inline-block;
+    transform: translateY(100%);
+    position: absolute;
+    bottom: 0;
+}
+
+.background-panel.active {
+    transform: translateY(0);
+}
+
+.background-options {
+    display: flex;
+    list-style-type: none;
+}
+
+.background-options img {
+    height: 100%;
+    max-height: 30vh;
+}
+
+.background-options img.selected {
+    border: 0.3rem solid #fff;
+}

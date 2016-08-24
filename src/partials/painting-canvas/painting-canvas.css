@@ -1,0 +1,7 @@
+.painting-canvas > img {
+    position: absolute;
+}
+
+.painting-canvas > img.selected {
+    filter: drop-shadow(0 0 0.4rem #fff);
+}

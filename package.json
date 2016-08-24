@@ -1,0 +1,18 @@
+{
+  "name": "artogether",
+  "version": "1.0.0",
+  "description": "Prototype for Amsterdam museum & Lava Labs.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "browser-sync start --server src --files src/*",
+    "surge": "surge -p ./src -d artogether.surge.sh"
+  },
+  "author": "Selwyn Versteeg",
+  "license": "All Rights Reserved",
+  "private": true,
+  "devDependencies": {
+    "browser-sync": "^2.12.12",
+    "surge": "^0.18.0"
+  },
+  "dependencies": {}
+}
