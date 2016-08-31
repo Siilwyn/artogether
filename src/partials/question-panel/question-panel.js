@@ -284,7 +284,7 @@ const questions = [
 
 const questionTitle = document.querySelector('[data-question-title]');
 const questionAnswers = document.querySelector('[data-question-answers]');
-const paintingInventory = document.querySelector('[data-painting-inventory]');
+var paintingInventory = document.querySelector('[data-painting-inventory]');
 var question;
 
 const randomQuestion = function () {

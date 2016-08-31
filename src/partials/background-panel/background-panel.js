@@ -32,7 +32,12 @@
     selectedOption = event.target;
 
     selectedOption.classList.add('selected');
-    document.body.style.backgroundImage = `url(\'${selectedOption.src}\')`;
+
+    socket.emit('change background', selectedOption.src);
+  });
+
+  socket.on('change background', function (url) {
+    document.body.style.backgroundImage = `url(\'${url}\')`;
   });
 
   manager.on('panmove', function (event) {

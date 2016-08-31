@@ -4,7 +4,8 @@
   "description": "Prototype for Amsterdam museum & Lava Labs.",
   "main": "src/index.js",
   "scripts": {
-    "start": "browser-sync start --server src --files src/*",
+    "start": "browser-sync start --server src --files src/* --port 3000",
+    "serve": "nodemon --watch src src/server.js",
     "surge": "surge -p ./src -d artogether.surge.sh"
   },
   "author": "Selwyn Versteeg",
@@ -12,7 +13,11 @@
   "private": true,
   "devDependencies": {
     "browser-sync": "^2.12.12",
+    "nodemon": "^1.11.0",
     "surge": "^0.18.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.14.0",
+    "socket.io": "^1.4.6"
+  }
 }
